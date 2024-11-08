@@ -1,0 +1,49 @@
+/* index.css */
+
+/* Import Tailwind base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional custom global styles */
+body {
+  font-family: 'Inter', sans-serif; /* Set a clean, modern font */
+}
+
+/* Customize the container width for consistent padding */
+.container {
+  max-width: 1280px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Additional enhancements */
+a {
+  transition: color 0.2s;
+}
+
+/* Customize button hover effect */
+button:hover {
+  transform: scale(1.02); /* Slight zoom-in on hover */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Shadow and rounded corners for cards */
+.card {
+  @apply shadow-lg rounded-lg p-6 bg-white;
+}
+
+/* Hero section customization */
+.hero {
+  @apply bg-blue-600 text-white text-center py-24;
+}
+
+/* Features section customization */
+.features {
+  @apply py-16 bg-gray-50;
+}
+
+/* Feature cards styling for hover effect */
+.feature-card {
+  @apply transition duration-300 ease-in-out hover:shadow-xl hover:bg-gray-100;
+}
