@@ -2,33 +2,32 @@ import React from 'react';
 
 function Home() {
   return (
-    <div>
+    <main>
       <section className="bg-blue-600 text-white text-center py-24">
-        <h1 className="text-5xl font-bold">Automate Any Task on Any Website</h1>
-        <p className="mt-6 text-lg">Our AI-driven API follows your instructions to perform tasks across the web.</p>
-        <button className="mt-8 bg-white text-blue-600 py-3 px-6 rounded-full font-semibold hover:bg-gray-200 transition">
-          Get Started for Free
-        </button>
+        <h1 className="text-5xl font-bold">Automate Tasks Seamlessly</h1>
+        <p className="mt-4 text-lg">Our API enables autonomous task execution on any website.</p>
+        <button className="mt-6 bg-white text-blue-600 py-2 px-4 rounded">Get Started</button>
       </section>
-
-      <section className="py-16 text-center">
-        <h2 className="text-3xl font-bold mb-8">How It Works</h2>
-        <div className="flex flex-col md:flex-row gap-8 justify-center">
-          <div className="flex flex-col items-center">
-            <span className="text-xl font-semibold">1. Input Website</span>
-            <p>Enter the URL where tasks will be automated.</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="text-xl font-semibold">2. Define Task</span>
-            <p>Provide step-by-step instructions for the task.</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="text-xl font-semibold">3. Run Automation</span>
-            <p>The API executes tasks on the specified website.</p>
+      <section className="py-16">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-8">Features</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-6 bg-white shadow rounded">
+              <h3 className="text-xl font-semibold mb-2">Easy Integration</h3>
+              <p>Seamlessly integrate with your existing systems.</p>
+            </div>
+            <div className="p-6 bg-white shadow rounded">
+              <h3 className="text-xl font-semibold mb-2">Scalable</h3>
+              <p>Handle increasing workloads effortlessly.</p>
+            </div>
+            <div className="p-6 bg-white shadow rounded">
+              <h3 className="text-xl font-semibold mb-2">Secure</h3>
+              <p>Robust security measures to protect your data.</p>
+            </div>
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }
 
